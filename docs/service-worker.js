@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/e-s3-evaluacion-intermedia-maria-badanina/precache-manifest.d441e0018c7b01a794951b32300fca9b.js"
+  "/e-s3-evaluacion-intermedia-maria-badanina/precache-manifest.49a30d65e5441a340b5fc05a4377c6d8.js"
 );
 
 workbox.clientsClaim();
