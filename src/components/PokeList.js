@@ -5,13 +5,13 @@ class PokeList extends Component {
   render() {
     return (
       <div>
-        <h1>Mi lista de pokemon</h1>
-        <ul>
+        <h1 className="title">Mi lista de pokemon</h1>
+        <ul className="list">
           {this.props.pokemons.map((pokemon, i) => {
             return (
-              <li key={i}>
+              <li key={i} className="card">
                 <img src={pokemon.url} alt={pokemon.name} />
-                <h2>{pokemon.name}</h2>
+                <h2 className="name">{pokemon.name}</h2>
                 <Pokemon pokemon={pokemon} />
               </li>
             );

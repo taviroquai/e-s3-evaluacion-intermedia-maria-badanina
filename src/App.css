@@ -1,32 +1,69 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  font-size: 60px;
   text-align: center;
+  margin: 30px 50px;
+  color: rgb(1, 203, 190);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 700px;
+  margin: 50px auto;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 200px;
+  height: 250px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.084);
+  cursor: pointer;
+  transition: .3s all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  box-shadow: 0 15px 25px 5px rgba(0, 0, 0, 0.084);
+  transform: translateY(-10px);
+}
+
+.name {
+  color: rgb(108, 218, 207);
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+.type {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+.types {
+  background-color: rgb(108, 218, 207);
+  margin: 0 5px;
+  padding: 7px 15px;
+  font-size: 15px;
+  line-height: 15px;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px 0 rgba(12, 189, 171, 0.5);
+  color: #fff;
+  font-weight: 400;
 }

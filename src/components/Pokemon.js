@@ -5,7 +5,7 @@ class Pokemon extends Component {
     return (
       <ul className="type">
         {this.props.pokemon.types.map((type, i) => {
-          return <li key={i}>{type}</li>;
+          return <li key={i} className="types">{type}</li>;
         })}
       </ul>
     );
