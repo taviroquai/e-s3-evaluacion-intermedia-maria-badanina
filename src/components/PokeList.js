@@ -8,12 +8,14 @@ class PokeList extends Component {
             <div>
                 <h1 className="title">Mi lista de pokemon</h1>
                 <ul className="list">
-                    {this.props.pokemons.map((pokemon, i) => {
+                    {this.props.pokemons.map((pokemon, id) => {
                         return (
-                            <li key={i} className="card">
-                                <img src={pokemon.url} alt={pokemon.name} />
-                                <h2 className="name">{pokemon.name}</h2>
-                                <Pokemon pokemon={pokemon} />
+                            <li key={id} className="card">
+                                <Pokemon
+                                    pokemon={pokemon}
+                                    imageUrl={pokemon.url}
+                                    pokemonName={pokemon.name}
+                                />
                             </li>
                         );
                     })}
@@ -23,8 +25,8 @@ class PokeList extends Component {
     }
 }
 
-Pokemon.propTypes = {
-    pokemons: propTypes.arrayOf(propTypes.string)
+PokeList.propTypes = {
+    pokemons: propTypes.arrayOf(propTypes.object.isRequired).isRequired
 };
 
 export default PokeList;
