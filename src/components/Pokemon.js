@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import propTypes from "prop-types";
+import "./Pokemon.scss";
 
 class Pokemon extends Component {
   render() {
